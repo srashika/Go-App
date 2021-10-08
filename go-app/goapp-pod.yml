@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+        name: go-app
+        labels:
+                language: go
+                env: test
+spec:
+        containers:
+                - name: go-app
+                  image: go-app:1.0.1
+                  ports:
+                         - containerPort: 8080
+                           protocol: TCP        

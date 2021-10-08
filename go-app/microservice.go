@@ -9,6 +9,7 @@ import (
 )
 
 func main() {
+	fmt.Println("started..")
 	http.HandleFunc("/", index)
 	http.HandleFunc("/api/echo", api.EchoHandleFunc)
 	//http.HandleFunc("/api/hello", api.HelloHandleFunc)
